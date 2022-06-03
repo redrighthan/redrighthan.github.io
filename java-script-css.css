@@ -1,13 +1,6 @@
 /*JavaScript-CSS*/
 	* {box-sizing:border-box}
 
-	body {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	}
-
 	.slideshow-container {
 	  max-width: 1000px;
 	  position: relative;
@@ -99,4 +92,10 @@
 	font-size:70px;
 	text-decoration:none;
 	font-family:helvetica;
+	}
+	body{
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
 	}

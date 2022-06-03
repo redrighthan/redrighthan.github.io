@@ -6,9 +6,9 @@
 	margin-right:auto;
 	}
 	body {
-	background-size: cover;
-	backgroung-position: center;
-	background-repeat: no-repeat;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
 	background-attachment: fixed;
 	height: 100vh;
 	margin:0px 500px;
@@ -84,4 +84,6 @@
 	}
 	.seznam{
 	text-align:left;
+	display:inline-block;
+	display:-moz-inline-stack;
 	}
