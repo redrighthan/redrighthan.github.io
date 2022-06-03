@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Nik Ceglar">
+	<link rel="stylesheet" href="styles.css">
+	<title>Načini Interakcije</title>
+</head>
+<body style="background-image: url('ozadje.png');">
+<a href="index.html" class="naslov" id="Na_vrh">MENU</a>
+<h1>NAČINI INTERAKCIJE</h1>
+<table align="center">
+	<tr>
+		<th>KAZALO</th>
+	</tr>
+	<tr>
+		<td><a href="#Object_mode" class="sidra">Object Mode</a></td>
+	<tr>
+		<td><a href="#Edit_mode" class="sidra">Edit Mode</a></td>
+	</tr>
+	<tr>
+		<td><a href="#Sculpt_mode" class="sidra">Sculpt Mode</a></td>
+	</tr>
+	<tr>
+		<td><a href="#Vertex_paint" class="sidra">Vertex Paint</a></td>
+	</tr>
+	<tr>
+		<td><a href="#Weight_paint" class="sidra">Weight Paint</a></td>
+	</tr>
+	<tr>
+		<td><a href="#Texture_paint" class="sidra">Texture Paint</a></td>
+	</tr>
+</table>
+	<h1 id="Object_mode">Object Mode</h1>
+		<div>
+			Blender vključuje več različnih načinov za interakcijo s predmeti med katerimi sta glavno Object mode in Edit mode, ki ju lahko preklapljamo s tipko Tab. 
+			Object mode se uporablja za manipuliranje posameznih predmetov kot enote medtem, ko se Edit mode uporablja za manipuliranje podatkov predmeta. 
+			V Object mode lahko na primer premikamo, večamo, pomanjšujemo in obračamo cele poligonske mreže/polygon meshes.
+		</div>
+		<img src="https://blenderartists.org/uploads/default/original/4X/4/6/4/464cf568a110ef04efaf7a63b1b6f3173a5f3025.jpeg">
+		
+	<h1 id="Edit_mode">Edit Mode</h1>
+		<div>
+			V Edit mode pa lahko na primer manipuliramo določena oglišča,robove in ploskve posamezne mreže.
+		</div>
+		<img src="https://preview.redd.it/vt8os0ic8qu01.png?auto=webp&s=10504df027e631c1c1ce6c9ecb7fee9a6e4b8725">
+		
+	<h1 id="Sculpt_mode">Sculpt Mode</h1>
+		<div>
+			Način Sculpt Mode je podoben načinu Edit Mode, saj se uporablja za spreminjanje oblike modela, 
+			vendar se v načinu Sculpt Mode uporablja povsem drugačen potek dela: 
+			namesto posameznih elementov (vrhov, robov in obrazov) se območje modela spreminja s čopičem. Z drugimi besedami, namesto da bi izbral skupino vrhov, v načinu Sculpt Mode spreminja geometrijo v območju vpliva čopiča.
+		</div>
+		<img src="https://docs.blender.org/manual/en/latest/_images/sculpt-paint_sculpting_introduction_example.jpg">
+	<h1 id="Vertex_paint">Vertex Paint</h1>
+		<div>
+			Vertex paint je preprost način barvanja predmeta z neposrednim spreminjanjem barve verteksov in ne tekstur.
+			Ko je verteks pobarvan, se njegova barva spremeni glede na nastavitve čopiča. 
+			Barva vseh vidnih ploskev in robov, ki so povezani z verteksom, se nato spremeni z gradientom glede na barvo drugih povezanih vrhov. Barva zakritih obrazov se ne spremeni.
+		</div>
+		<img src="https://devtalk.blender.org/uploads/default/original/2X/c/c61f38f78db71c36778c14bfdc939fc3fae8d00d.gif">
+		
+	<h1 id="Weight_paint">Weight Paint</h1>
+		<div>
+			Skupine verteksov imajo lahko zelo veliko število povezanih verteksov in s tem veliko število uteži (ena utež na dodeljen vrh). 
+			Weight paint je metoda za ohranjanje velikih količin informacij o teži na zelo intuitiven način.
+			Uporablja se predvsem za oblikovanje mrež, kjer se skupine vrhov uporabljajo za določanje relativnih vplivov kosti na mrežo. 
+			Uporabljamo ga tudi za nadzor emisije delcev, gostote las, številnih modifikatorjev, tipk oblike itd.
+			Vrhovom predmeta lahko dodelite uteži tako, da jih pobarvate s čopiči za uteži. 
+			Če začnete barvati mrežo, se uteži samodejno dodajo aktivni skupini vrhov (po potrebi se ustvari nova skupina vrhov).
+		</div>
+		<img src="https://i.ytimg.com/vi/lpVFV7YSLgo/maxresdefault.jpg">
+		
+	<h1 id="Texture_paint">Texture Paint</h1>
+		<div>
+			Blender ima vgrajen način barvanja, imenovan Texture Paint, ki je zasnovan posebej za hitro in enostavno urejanje UV-tekstur in slik v urejevalniku slik ali 3D-oglednem polju. 
+			Ker je tekstura UV samo slika za posebne namene, lahko uporabite tudi kateri koli zunanji program za barvanje, kot sta GIMP ali Krita.
+			Ker ima lahko mreža plasti tekstur UV, lahko mrežo obarva več slik. Vendar ima vsaka tekstura UV samo eno sliko. 
+		</div>
+		<img src="https://docs.blender.org/manual/en/latest/_images/sculpt-paint_texture-paint_introduction_example.png">
+	<div><a href="#Na_vrh" class="sidra">Na vrh</div>
+
+
+</body>
+</html>
