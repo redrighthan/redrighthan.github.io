@@ -7,6 +7,9 @@
 	}
 	body {
 	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), no-repeat center / cover;
+	background-clip: cover;
+	backgroung-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 100vh;
 	margin:0px 500px;
